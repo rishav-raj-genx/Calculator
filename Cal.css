@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    text-align: center;
+    padding: 0;
+    background-color: black;
+    color: rgb(0, 221, 255);
+}
+
+body, html{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    outline: 3px solid white;
+    margin-top: 10px;
+    border-bottom-left-radius:40px;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 20px;
+    height: 635px;
+    width: 300px;
+    gap: 1rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    z-index: 100;
+    border:3px solid rgb(0, 221, 255);
+}
+
+.dis{
+    display:flex;
+    width: 340px;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+}
+
+.inpute, .display{
+    border: 1px solid rgb(0, 221, 255);
+    outline: 1px solid white;
+
+}
+
+input{
+    height: 110px;
+    width: 150px;
+    border-top: 0;
+    background-color: transparent;
+    font-size: 4rem;
+    color:rgb(223, 221, 221);
+}
+
+.display, .dis{
+    border-top-left-radius: 40px;
+}
+
+.inpute, .dis{
+    border-top-right-radius: 40px;
+    margin-right: 40px;
+}
+
+.keys{
+display: flex;
+flex-wrap: wrap;
+background-color: transparent;
+gap:10px 15px;
+justify-content: center;
+align-items: center;
+}
+
+button{
+    height: 80px;
+    width:60px;
+    font-size: 3rem;
+    border-radius: 20px;
+    background-color: transparent;
+    outline: 1px solid cyan;
+    border:1px solid white;
+}
+
+#color{
+    border-radius: 80%;
+height: 60px;
+}
+
+#left, #right{
+    height: 60px;
+    width:100px;
+}
