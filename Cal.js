@@ -1,8 +1,14 @@
 let string = "";
 let string1 = "";
+let isDark = true;
+let body = document.querySelector("body")
 let input = document.querySelector(".inpute");
 let display = document.querySelector(".display");
 let buttons = document.querySelectorAll(".button");
+let color = document.querySelector("#color")
+let white = document.querySelectorAll(".white")
+let i = document.querySelector("i");
+let button = document.querySelector("button")
 
 Array.from(buttons).forEach((button) => {
     button.addEventListener('click', clickMe);
@@ -10,16 +16,22 @@ Array.from(buttons).forEach((button) => {
 })
 
 function clickMe(cc) {
-    if (cc.target.innerHTML == '=') {
+    if (cc.target.id === "color" || cc.target.closest("#color")) {
+        isDark = !isDark;
+        if (isDark) {
+            body.classList.remove("body");
+            body.classList.add("bb");
+        } else {
+            body.classList.remove("bb");
+            body.classList.add("body");
+        }
+    } else if (cc.target.innerHTML == '=') {
         cal();
     } else if (cc.target.innerHTML == 'C') {
         input.value = "";
         string = '';
         display.value = "";
-    } else if (cc.target.classList.contains("fa-sun")) {
-        // buttons.style.border-color = "black";
-        input.style.color = "black";
-} else if (cc.target.innerHTML == 'X') {
+    } else if (cc.target.innerHTML == 'x') {
         string = string.slice(0, -1);
         input.value = string;
     } else {

@@ -53,7 +53,7 @@ input{
     border-top: 0;
     background-color: transparent;
     font-size: 4rem;
-    color:rgb(223, 221, 221);
+    color:rgb(127, 121, 121);
 }
 
 .display, .dis{
@@ -92,4 +92,31 @@ height: 60px;
 #left, #right{
     height: 60px;
     width:100px;
+}
+
+
+.white{
+    background-color: rgb(0, 221, 255);
+    color: black;
+    border: 1px solid black;
+}
+
+.body{
+    background-color: white;
+    color:rgb(0, 0, 0);
+    border: 1px solid black;
+    outline-color: black;
+}
+
+.bb{
+    background-color: rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    outline-color: rgb(255, 255, 255);
+}
+
+.black{
+    background-color: rgb(0, 221, 255);
+    color: black;
+    border: 1px solid black;
 }
