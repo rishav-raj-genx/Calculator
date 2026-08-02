@@ -55,6 +55,7 @@ function cal() {
     }
 }
 
+
 function key(event) {
     if (['/', '*', '-', '+', 'Enter', 'Backspace'].includes(event.key)) {
         event.preventDefault();
